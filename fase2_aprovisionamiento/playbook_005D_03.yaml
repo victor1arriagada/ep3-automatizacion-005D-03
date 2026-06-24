@@ -1,0 +1,39 @@
+# fase2_aprovisionamiento/playbook_005D_03.yaml
+- name: EP3 - Aprovisionamiento Corporativo de Red
+  hosts: routers
+  gather_facts: no
+  vars_files:
+    - "../vars/vars_005D_03.yaml"
+
+  tasks:
+    - name: 6. Respaldar la configuracion actual (show running-config)
+      ios_command:
+        commands: show running-config
+      register: backup_output
+
+    - name: Guardar archivo de respaldo en la carpeta correspondiente
+      copy:
+        content: "{{ backup_output.stdout[0] }}"
+        dest: "./respaldo/backup_005D_03.cfg"
+
+    - name: Aplicar configuraciones globales de Automatizacion y Corporativas
+      ios_config:
+        lines:
+          - netconf-yang                                # 7. Habilitar NETCONF
+          - restconf                                    # 8. Habilitar RESTCONF
+          - ip http secure-server                       # 9. Servidor HTTP Seguro
+          - hostname {{ cliente.hostname }}             # 10. Hostname Corporativo
+          - banner login c "{{ router.banner }}" c      # 11. Banner de acceso
+          - ntp server {{ router.ntp_server }}          # 12. Servidor NTP
+
+    - name: 13. Configurar descripcion de interfaz GigabitEthernet1
+      ios_config:
+        lines:
+          - description {{ router.descripcion_wan }}
+        parents: interface GigabitEthernet1
+
+    - name: 14. Crear interfaz Loopback con IP de gestion
+      ios_config:
+        lines:
+          - ip address {{ router.loopback_ip }} {{ router.loopback_mask }}
+        parents: "interface Loopback{{ router.loopback_id }}"
