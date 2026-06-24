@@ -1,0 +1,34 @@
+=== BASELINE SNAPSHOT ===
+Alumno: 005D-03
+Fecha: Wed 24 Jun 2026 11:36:07 PM UTC
+Host : labvm
+========================
+
+Learning '['interface', 'platform', 'routing']' on devices '['CSR1kv']'
+[33mDevice CSR1kv Connection arguments is type <class 'list'>, expecting dictionary.[0m[39m
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:28<00:57, 28.60s/it] 67%|██████▋   | 2/3 [00:45<00:25, 25.06s/it]100%|██████████| 3/3 [00:46<00:00, 17.92s/it]100%|██████████| 3/3 [00:46<00:00, 15.56s/it]+==============================================================================+
+| Genie Learn Summary for device CSR1kv                                        |
++==============================================================================+
+|  Connected to CSR1kv                                                         |
+|  -   Log: evidencias/baseline_005D_03/connection_CSR1kv.txt                  |
+|------------------------------------------------------------------------------|
+|  Learnt feature 'interface'                                                  |
+|  -  Ops structure:                                                           |
+| evidencias/baseline_005D_03/interface_iosxe_CSR1kv_ops.txt                   |
+|  -  Device Console:                                                          |
+| evidencias/baseline_005D_03/interface_iosxe_CSR1kv_console.txt               |
+|------------------------------------------------------------------------------|
+|  Learnt feature 'platform'                                                   |
+|  -  Ops structure:  evidencias/baseline_005D_03/platform_iosxe_CSR1kv_ops.txt |
+|  -  Device Console:                                                          |
+| evidencias/baseline_005D_03/platform_iosxe_CSR1kv_console.txt                |
+|------------------------------------------------------------------------------|
+|  Learnt feature 'routing'                                                    |
+|  -  Ops structure:  evidencias/baseline_005D_03/routing_iosxe_CSR1kv_ops.txt |
+|  -  Device Console:                                                          |
+| evidencias/baseline_005D_03/routing_iosxe_CSR1kv_console.txt                 |
+|==============================================================================|
+
+
+
+

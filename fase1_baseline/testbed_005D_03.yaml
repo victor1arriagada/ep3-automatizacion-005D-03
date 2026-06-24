@@ -1,0 +1,16 @@
+# fase1_baseline/testbed_005D_03.yaml
+devices:
+  CSR1kv:
+    os: iosxe
+    type: router
+    credentials:
+      default:
+        username: "cisco"
+        password: "cisco123!"
+    connections:
+      cli:
+        protocol: ssh
+        arguments:
+          - "-o KexAlgorithms=diffie-hellman-group14-sha1"
+        ip: "192.168.56.101"
+        port: 22
