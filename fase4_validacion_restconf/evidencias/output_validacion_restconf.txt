@@ -1,0 +1,17 @@
+==================================================
+Script: validacion_restconf.py
+Fecha/Hora: 2026-06-25 00:09:45
+Host VM: labvm
+==================================================
+Consultando endpoints RESTCONF...
+
+Iniciando análisis de criterios...
+Criterio 1 - Hostname: RTR-CLINAMER == RTR-CLINAMER -> [OK]
+Criterio 2 - IP Loopback: 10.5.3.1 == 10.5.3.1 -> [OK]
+Criterio 3 - Descripción WAN: Enlace-WAN-Concepcion == Enlace-WAN-Concepcion -> [OK]
+Criterio 4 - Servidor NTP: 9.9.9.9 == 9.9.9.9 -> [OK]
+
+=== REPORTE FINAL DE VALIDACIÓN RESTCONF ===
+Criterios aprobados: 4/4
+Resultado global: CONFORME
+===========================================
