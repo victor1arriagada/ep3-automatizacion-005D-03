@@ -1,0 +1,17 @@
+==================================================
+Script: validacion_netconf.py
+Fecha/Hora: 2026-06-25 00:05:34
+Host VM: labvm
+==================================================
+Conectando vía NETCONF a 192.168.56.101...
+Configuración XML cruda guardada con éxito.
+Criterio 1 - Hostname: RTR-CLINAMER == RTR-CLINAMER -> [OK]
+Criterio 2 - IP Loopback: 10.5.3.1 == 10.5.3.1 -> [OK]
+Criterio 3 - Máscara Loopback: 255.255.255.0 == 255.255.255.0 -> [OK]
+Criterio 4 - Descripción WAN: Enlace-WAN-Concepcion == Enlace-WAN-Concepcion -> [OK]
+Criterio 5 - Servidor NTP: 9.9.9.9 == 9.9.9.9 -> [OK]
+
+=== REPORTE FINAL DE VALIDACIÓN NETCONF ===
+Criterios aprobados: 5/5
+Resultado global: CONFORME
+===========================================
