@@ -1,0 +1,21 @@
+==================================================
+Script: generar_certificado.py
+Fecha/Hora: 2026-06-25 00:19:54
+Host VM: labvm
+==================================================
+==================================================
+CERTIFICADO DE COMPLIANCE DE AUDITORÍA DE RED
+==================================================
+Código Alumno   : 005D-03
+Nombre Alumno   : Victor Exequiel Arriagada Troncoso
+Empresa Cliente : Clinica Las Americas SA
+Fecha Emisión   : 2026-06-25 00:19:54
+--------------------------------------------------
+RESULTADOS DE VERIFICACIÓN INDEPENDIENTE:
+--------------------------------------------------
+- Auditoría vía PROTOCOLO NETCONF : CONFORME
+- Auditoría vía PROTOCOLO RESTCONF: CONFORME
+--------------------------------------------------
+DICTAMEN FINAL:
+EQUIPO ESTADO GLOBAL: CONFORME
+==================================================
